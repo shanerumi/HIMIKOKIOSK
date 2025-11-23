@@ -1,5 +1,5 @@
 <?php
-$himikoConn = mysqli_connect("localhost", "root", "", "himikotogaDB");
+$himikoConn = mysqli_connect("localhost", "root", "", "himikoDB");
 
 if (!$himikoConn) {
     die("Connection failed: " . mysqli_connect_error());

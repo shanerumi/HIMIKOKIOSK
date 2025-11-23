@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="himikologsign.css">
-    <title>Document</title>
+    <title>Login/Signup</title>
 </head>
 <body>
     <a href="himikoRegister.php" target="mid_column"><button class="himikoSignUp">Sign Up</button></a>
