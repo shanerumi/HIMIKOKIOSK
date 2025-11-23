@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, frameset, frame {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background-color: #ffe4f8; 
+}
+frame {
+  border: 2px solid #ff77a9;
+}

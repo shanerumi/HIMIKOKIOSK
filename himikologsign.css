@@ -1,0 +1,45 @@
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffe4f8;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  margin-top: 20px;
+}
+
+.himikoSignUp, .himikoLogIn {
+  padding: 12px 0;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  color: white;
+  width: 200px;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.himikoSignUp {
+  background: linear-gradient(90deg, #ff497c, #ff77a9);
+}
+
+.himikoLogIn {
+  background: linear-gradient(90deg, #a367ff, #c79fff);
+}
+
+.himikoSignUp:hover, .himikoLogIn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}

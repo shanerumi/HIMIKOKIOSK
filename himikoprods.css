@@ -1,0 +1,110 @@
+body {
+    background-color: #ffe4f8;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 20px;
+    gap: 20px;
+}
+
+h1 {
+    color: #ff497c;
+    font-size: 32px;
+    text-align: center;
+}
+
+.himikocon {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.himikocard {
+    background-color: #fff0f5;
+    padding: 25px 20px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(255, 100, 180, 0.2);
+    width: 300px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.himikocard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(255, 100, 180, 0.3);
+}
+
+.himikocard img {
+    border-radius: 12px;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: 2px solid #ffb3d9;
+}
+
+.himikocard h5 p {
+    font-size: 18px;
+    font-weight: 700;
+    color: #ff297c;
+    margin: 0;
+}
+
+.himikocard .price {
+    font-size: 16px;
+    font-weight: 600;
+    color: #ff297c;
+    margin: 5px 0;
+}
+
+.himikoviewbtn {
+    width: 100%;
+    padding: 12px 0;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #fff;
+    background: linear-gradient(90deg, #ff66b3, #ff1a75);
+    transition: 0.3s ease;
+}
+
+.himikoviewbtn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(255, 26, 117, 0.4);
+}
+
+@media (max-width: 768px) {
+    .himikocard {
+        width: 45%;
+        padding: 20px;
+    }
+
+    .himikocard img {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media (max-width: 500px) {
+    .himikocard {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .himikocard img {
+        width: 130px;
+        height: 130px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+}

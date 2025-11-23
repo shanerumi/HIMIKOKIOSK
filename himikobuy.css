@@ -1,0 +1,106 @@
+body {
+    background-color: #ffe4f8;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+h1 {
+    color: #ff497c;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.himikocon {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.himikocard {
+    background-color: #fff0f5;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 12px 30px rgba(255, 100, 180, 0.2);
+    width: 450px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.himikocard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 14px 35px rgba(255, 100, 180, 0.3);
+}
+
+.himikocard img {
+    border-radius: 12px;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.himikocard table {
+    width: 100%;
+    border-collapse: collapse;
+    gap: 10px;
+}
+
+.himikocard td p {
+    font-weight: 600;
+    color: #ff1a75;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.himikocard input[type="text"], 
+.himikocard input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #d6336c;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.himikoviewbtn {
+    width: 100%;
+    padding: 12px 0;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.3s ease;
+    text-transform: uppercase;
+}
+
+.himikoviewbtn[style*="green"] {
+    background: linear-gradient(90deg, #ff66b3, #ff1a75);
+}
+
+.himikoviewbtn[style*="blue"] {
+    background: linear-gradient(90deg, #ff85c1, #ff4da6);
+}
+
+.himikoviewbtn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(255, 26, 117, 0.4);
+}
+
+@media (max-width: 768px) {
+    .himikocard {
+        width: 90%;
+        padding: 30px;
+    }
+
+    .himikocard img {
+        width: 100%;
+        height: auto;
+    }
+}

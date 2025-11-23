@@ -1,0 +1,64 @@
+body {
+    background-color: #ffe4f8;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+    text-align: center;
+    gap: 20px;
+}
+
+h1 {
+    color: #ff497c;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #333;
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+h2 span {
+    font-weight: 700;
+    color: #d6336c;
+}
+
+button.himikoClear {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(90deg, #a367ff, #c79fff);
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+}
+
+button.himikoClear:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(163, 103, 255, 0.4);
+}
+
+a {
+    text-decoration: none;
+}
+
+@media (max-width: 500px) {
+    h1 {
+        font-size: 1.6rem;
+    }
+    h2 {
+        font-size: 1rem;
+    }
+    button.himikoClear {
+        width: 90%;
+    }
+}

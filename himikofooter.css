@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffe4f8;
+  color: #d6336c;
+  text-align: center;
+  padding: 30px;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #ff497c;
+}
+

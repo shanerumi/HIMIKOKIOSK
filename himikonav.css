@@ -1,0 +1,55 @@
+body {
+    background-color: #ffe4f8;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.button-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.adminbtn, .himikologout {
+    width: 220px;
+    padding: 14px 0;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+}
+
+.adminbtn {
+    background: linear-gradient(90deg, #ff497c, #ff77a9);
+}
+
+.adminbtn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+.himikologout {
+    background: linear-gradient(90deg, #a367ff, #c79fff);
+}
+
+.himikologout:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+@media (max-width: 1200px) {
+    .button-container {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+}

@@ -1,0 +1,33 @@
+CREATE DATABASE himikotogaDB;
+
+USE himikotogaDB;
+
+CREATE TABLE himikoregistration (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    fname VARCHAR(100) NOT NULL,
+    lname VARCHAR(100) NOT NULL,
+    email VARCHAR(150) NOT NULL,
+    uname VARCHAR(100) NOT NULL,
+    pass VARCHAR(255) NOT NULL,
+    cpass VARCHAR(255) NOT NULL,
+    himiko_Type INT DEFAULT 0,
+    himiko_Status INT DEFAULT 0
+);
+
+CREATE TABLE himikoproducts (
+    himikoprodid INT AUTO_INCREMENT PRIMARY KEY,
+    himiko_ProductName VARCHAR(255) NOT NULL,
+    himiko_Unit VARCHAR(50) NOT NULL,
+    himiko_PriceperUnit DECIMAL(10,2) NOT NULL,
+    himiko_Image LONGBLOB
+);
+
+CREATE TABLE himikoorders (
+    order_id INT AUTO_INCREMENT PRIMARY KEY,
+    himiko_BuyerName VARCHAR(255) NOT NULL,
+    himiko_ProductName VARCHAR(255) NOT NULL,
+    himiko_ProductPrice DECIMAL(10,2) NOT NULL,
+    himiko_Quantity INT NOT NULL,
+    himiko_TotalPrice DECIMAL(10,2) NOT NULL,
+    himiko_Account VARCHAR(100) NOT NULL
+);
